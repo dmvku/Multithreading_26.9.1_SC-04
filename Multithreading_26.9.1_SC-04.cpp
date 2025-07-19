@@ -1,12 +1,14 @@
-﻿// Multithreading_26.9.1_SC-04.cpp: определяет точку входа для приложения.
-//
+﻿#include "threading.h"
 
-#include "Multithreading_26.9.1_SC-04.h"
+#include <iostream>
 
-using namespace std;
+extern const char* outFile{ "result.data" };
 
 int main()
 {
-	cout << "Hello CMake." << endl;
+	std::cout << "Threading summation.\n";
+	std::cout << "Hello!\nWe are testing the summation time of array elements\n"
+		<< "with a different number of threads.\n";
+	Array array;
 	return 0;
 }

@@ -12,7 +12,7 @@ endif()
 project ("Multithreading_26.9.1_SC-04")
 
 # Добавьте источник в исполняемый файл этого проекта.
-add_executable (Multithreading_26.9.1_SC-04 "Multithreading_26.9.1_SC-04.cpp" "Multithreading_26.9.1_SC-04.h" "main_thread.cpp")
+add_executable (Multithreading_26.9.1_SC-04 "Multithreading_26.9.1_SC-04.cpp" "threading.cpp" "threading.h")
 
 if (CMAKE_VERSION VERSION_GREATER 3.12)
   set_property(TARGET Multithreading_26.9.1_SC-04 PROPERTY CXX_STANDARD 20)
